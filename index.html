@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>dnstap</title>
+
+    
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="local.css" type="text/css" />
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+        <div class="container">
+          <a class="brand" href="">dnstap</a>
+          <ul class="nav">
+            
+                
+            
+          </ul>
+          <ul class="nav pull-right">
+            
+                
+                    <li ><a href="./recentchanges/">RecentChanges</a></li>
+                
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="content">
+          <header class="page-header">
+            <h1>dnstap</h1>
+          </header>
+
+            <h3>Introduction</h3>
+
+<p><code>dnstap</code> adds a fast, binary format event stream directly into DNS servers. It uses <a href="https://developers.google.com/protocol-buffers/">Protocol Buffers</a> to encode events that occur inside a nameserver in a vendor-neutral format. Currently <code>dnstap</code> can only encode the reception and transmission of wire-format DNS messages. Server-side <code>dnstap</code> support is being developed initially for the <a href="http://unbound.net/">Unbound</a> recursive DNS server. A command line tool to receive and decode <code>dnstap</code> events is also being worked on.</p>
+
+<p>We plan to define more event types and add support to more DNS servers in the future.</p>
+
+<p>Check out <a href="https://gist.github.com/edmonds/5772879">this example output</a> from the <code>dnstap</code> command-line tool to get an idea of the kind of information that <code>dnstap</code> can encode.</p>
+
+<h3>Presentations</h3>
+
+<p>A <a href="slides/dnstap.html">slide deck</a> introducing <code>dnstap</code> and giving the current status was presented on June 13, 2013.</p>
+
+<h3>Mailing list</h3>
+
+<p>There is a <a href="http://lists.redbarn.org/mailman/listinfo/dnstap">dnstap mailing list</a> for everyone interested in discussing <code>dnstap</code>.</p>
+
+<h3>Code</h3>
+
+<p>The following <code>dnstap</code> code repositories are available.</p>
+
+<h4><a href="https://github.com/dnstap/dnstap"><code>dnstap</code></a></h4>
+
+<p>This is the C library for adding <code>dnstap</code> support to a DNS server.</p>
+
+<p>You need this if you're a DNS programmer adding <code>dnstap</code> support to a nameserver, or if you're compiling a nameserver with <code>dnstap</code> support.</p>
+
+<p>Release tarballs of the library have no extra dependencies, but a <code>git</code> checkout requires the <a href="https://code.google.com/p/protobuf-c/"><code>protobuf-c</code></a> compiler and the <code>autotools</code> to be installed, since no generated files are checked in to this repository.</p>
+
+<pre><code>$ sudo apt-get install protobuf-c-compiler
+$ git clone git://github.com/dnstap/dnstap.git
+$ cd dnstap &amp;&amp; ./autogen.sh &amp;&amp; ./configure &amp;&amp; make &amp;&amp; sudo make install
+</code></pre>
+
+<h4><a href="https://github.com/dnstap/dnstap.pb"><code>dnstap.pb</code></a></h4>
+
+<p>This is the <a href="https://code.google.com/p/protobuf/">Protocol Buffers</a> schema defining the layout of <code>dnstap</code> payloads. Use this if you want to process <code>dnstap</code> payloads in a programming language with <code>protobuf</code> support, or if you want to extend the <code>dnstap</code> schema to support new event types.</p>
+
+<pre><code>$ git clone git://github.com/dnstap/dnstap.pb.git
+$ cd dnstap.pb
+$ protoc-c --c_out=. dnstap.proto
+$ protoc --cpp_out=. dnstap.proto
+$ protoc --python_out=. dnstap.proto
+$ protoc --go_out=. dnstap.proto
+</code></pre>
+
+<h4><a href="https://github.com/dnstap/unbound"><code>unbound</code></a></h4>
+
+<p>This is <a href="http://nlnetlabs.nl/">NLNet Labs'</a> <a href="http://unbound.net/">Unbound</a> recursive DNS server, patched to generate <code>dnstap</code> payloads. <code>dnstap</code> support is developed on the <code>branches/dnstap</code> branch and periodically merged to <code>master</code>.</p>
+
+<p>Building Unbound with <code>dnstap</code> support requires that the <code>dnstap</code> library be installed first, see above. <code>dnstap</code> support for Unbound also introduces a build dependency on the <code>pkg-config</code> utility.</p>
+
+<p>Two new <code>./configure</code> arguments have been added: <code>--enable-dnstap</code> to build with <code>dnstap</code> support, and <code>--with-dnstap-socket-path</code> to set the default <code>dnstap</code> socket path.</p>
+
+<pre><code>$ git clone git@github.com:dnstap/unbound.git
+$ cd unbound &amp;&amp; ./configure --enable-dnstap &amp;&amp; make &amp;&amp; sudo make install
+</code></pre>
+
+<h4><a href="https://github.com/dnstap/golang-dnstap"><code>golang-dnstap</code></a></h4>
+
+<p>This is the <a href="http://golang.org/">Go</a> language library for working with <code>dnstap</code> sockets, log files, and message payloads. It also includes a command-line capture tool.</p>
+
+<pre><code># apt-get install golang
+$ go get -u github.com/dnstap/golang-dnstap/dnstap
+</code></pre>
+
+<h3>Quick setup</h3>
+
+<h4>Unbound DNS server</h4>
+
+<p>Add the following lines to <code>unbound.conf</code>:</p>
+
+<pre><code>server:
+    dnstap-enable: yes
+    dnstap-socket-path: "/var/run/unbound/dnstap.sock"
+    dnstap-send-identity: yes
+    dnstap-send-version: yes
+    dnstap-log-resolver-response-messages: yes
+    dnstap-log-client-query-messages: yes
+</code></pre>
+
+<p>Start Unbound and it will begin sending <code>dnstap</code> payloads to the <code>AF_UNIX</code> socket specified by the <code>dnstap-socket-path</code> variable.</p>
+
+<p>You also need a capture tool listening on the other side of the socket.</p>
+
+<h4><code>dnstap</code> command-line tool</h4>
+
+<p>The following command listens on the given <code>AF_UNIX</code> socket and decodes messages to <code>stdout</code>.</p>
+
+<pre><code>dnstap -s /var/run/unbound/dnstap.sock
+</code></pre>
+
+<p>The following command listens on the given <code>AF_UNIX</code> socket and saves message payloads to a binary <code>dnstap</code>-format log file.</p>
+
+<pre><code>dnstap -s /tmp/dnstap.sock -w /tmp/test.dnstap
+</code></pre>
+
+<p>The following command reads a previously saved <code>dnstap</code>-format log file and writes <a href="http://en.wikipedia.org/wiki/YAML">YAML</a>-formatted output to <code>stdout</code>. This format is extremely verbose.</p>
+
+<pre><code>dnstap -y -r test.dnstap
+</code></pre>
+
+<p>The following command reads a previously saved <code>dnstap</code>-format log file and writes <a href="http://en.wikipedia.org/wiki/YAML">YAML</a>-formatted output to the given output file. This format is extremely verbose.</p>
+
+<pre><code>dnstap -y -r test.dnstap -w test.yaml
+</code></pre>
+
+<h3>Authors and Contributors</h3>
+
+<p><code>dnstap</code> was written by Robert Edmonds, with input from Paul Vixie.</p>
+
+      </div>
+    </div>
+
+  </body>
+</html>

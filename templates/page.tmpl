@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title><TMPL_LOOP NAME="PARENTLINKS"><TMPL_VAR NAME=PAGE>/</TMPL_LOOP><TMPL_VAR TITLE></title>
+
+    <TMPL_IF NAME="META"><TMPL_VAR META></TMPL_IF>
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="<TMPL_VAR BASEURL>bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="<TMPL_VAR BASEURL>local.css" type="text/css" />
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+        <div class="container">
+          <a class="brand" href="<TMPL_VAR BASEURL>"><TMPL_VAR WIKINAME></a>
+          <ul class="nav">
+            <TMPL_LOOP BOOTMENU>
+                <TMPL_IF FIRSTNAV>
+                    <li <TMPL_IF ACTIVE>class="active"</TMPL_IF>><a href="<TMPL_VAR URL>"><TMPL_VAR PAGE></a></li>
+                </TMPL_IF>
+            </TMPL_LOOP>
+          </ul>
+          <ul class="nav pull-right">
+            <TMPL_LOOP BOOTMENU>
+                <TMPL_IF FIRSTNAV>
+                <TMPL_ELSE>
+                    <li <TMPL_IF ACTIVE>class="active"</TMPL_IF>><a href="<TMPL_VAR URL>"><TMPL_VAR PAGE></a></li>
+                </TMPL_IF>
+            </TMPL_LOOP>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="content">
+          <header class="page-header">
+            <h1><TMPL_VAR TITLE></h1>
+          </header>
+
+            <TMPL_VAR CONTENT>
+      </div>
+    </div>
+
+  </body>
+</html>
