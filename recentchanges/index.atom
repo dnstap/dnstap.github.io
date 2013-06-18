@@ -17,7 +17,320 @@
 
 <subtitle type="html">dnstap</subtitle>
 <generator uri="http://ikiwiki.info/">ikiwiki</generator>
-<updated>2013-06-18T00:12:57Z</updated>
+<updated>2013-06-18T03:56:47Z</updated>
+<entry>
+	<title>change to Source on dnstap</title>
+
+	<id>http://dnstap.info/recentchanges/change_faca40b81cb26460a897a1f821a98d49056519a2/</id>
+
+	<link href="http://dnstap.info/recentchanges/#change-faca40b81cb26460a897a1f821a98d49056519a2"/>
+
+	<author><name>edmonds</name></author>
+
+
+
+
+
+	<updated>2013-06-18T03:56:47Z</updated>
+	<published>2013-06-18T03:56:47Z</published>
+
+	<content type="html" xml:lang="en">
+	
+
+
+
+
+
+&lt;div id=&quot;change-faca40b81cb26460a897a1f821a98d49056519a2&quot; class=&quot;metadata&quot;&gt;
+&lt;span class=&quot;desc&quot;&gt;&lt;br /&gt;Changed pages:&lt;/span&gt;
+&lt;span class=&quot;pagelinks&quot;&gt;
+
+
+
+
+Source
+
+&lt;/span&gt;
+&lt;span class=&quot;desc&quot;&gt;&lt;br /&gt;Changed by:&lt;/span&gt;
+&lt;span class=&quot;committer&quot;&gt;
+
+edmonds
+
+&lt;/span&gt;
+&lt;span class=&quot;desc&quot;&gt;&lt;br /&gt;Commit type:&lt;/span&gt;
+&lt;span class=&quot;committype&quot;&gt;git&lt;/span&gt;
+&lt;span class=&quot;desc&quot;&gt;&lt;br /&gt;Date:&lt;/span&gt;
+&lt;span class=&quot;changedate&quot;&gt;&lt;span class=&quot;date&quot;&gt;at midnight 06/17/13&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;desc&quot;&gt;&lt;br /&gt;&lt;/span&gt;
+
+&lt;/div&gt;
+&lt;div class=&quot;changelog&quot;&gt;
+
+
+Source: add link to Examples page&lt;br /&gt;
+
+
+&lt;/div&gt;
+
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>change to index on dnstap</title>
+
+	<id>http://dnstap.info/recentchanges/change_2be6c32f4b46a1f62ef767acfdd66133378f7ee1/</id>
+
+	<link href="http://dnstap.info/recentchanges/#change-2be6c32f4b46a1f62ef767acfdd66133378f7ee1"/>
+
+	<author><name>edmonds</name></author>
+
+
+
+
+
+	<updated>2013-06-18T03:53:08Z</updated>
+	<published>2013-06-18T03:53:08Z</published>
+
+	<content type="html" xml:lang="en">
+	
+
+
+
+
+
+&lt;div id=&quot;change-2be6c32f4b46a1f62ef767acfdd66133378f7ee1&quot; class=&quot;metadata&quot;&gt;
+&lt;span class=&quot;desc&quot;&gt;&lt;br /&gt;Changed pages:&lt;/span&gt;
+&lt;span class=&quot;pagelinks&quot;&gt;
+
+
+
+
+index
+
+&lt;/span&gt;
+&lt;span class=&quot;desc&quot;&gt;&lt;br /&gt;Changed by:&lt;/span&gt;
+&lt;span class=&quot;committer&quot;&gt;
+
+edmonds
+
+&lt;/span&gt;
+&lt;span class=&quot;desc&quot;&gt;&lt;br /&gt;Commit type:&lt;/span&gt;
+&lt;span class=&quot;committype&quot;&gt;git&lt;/span&gt;
+&lt;span class=&quot;desc&quot;&gt;&lt;br /&gt;Date:&lt;/span&gt;
+&lt;span class=&quot;changedate&quot;&gt;&lt;span class=&quot;date&quot;&gt;at midnight 06/17/13&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;desc&quot;&gt;&lt;br /&gt;&lt;/span&gt;
+
+&lt;/div&gt;
+&lt;div class=&quot;changelog&quot;&gt;
+
+
+index: &amp;quot;Mailing list&amp;quot; -&amp;gt; &amp;quot;Community&amp;quot;&lt;br /&gt;
+
+
+&lt;/div&gt;
+
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>change to index on dnstap</title>
+
+	<id>http://dnstap.info/recentchanges/change_b57b829e256d873d17d78af186ec68b658c39725/</id>
+
+	<link href="http://dnstap.info/recentchanges/#change-b57b829e256d873d17d78af186ec68b658c39725"/>
+
+	<author><name>edmonds</name></author>
+
+
+
+
+
+	<updated>2013-06-18T03:52:50Z</updated>
+	<published>2013-06-18T03:52:50Z</published>
+
+	<content type="html" xml:lang="en">
+	
+
+
+
+
+
+&lt;div id=&quot;change-b57b829e256d873d17d78af186ec68b658c39725&quot; class=&quot;metadata&quot;&gt;
+&lt;span class=&quot;desc&quot;&gt;&lt;br /&gt;Changed pages:&lt;/span&gt;
+&lt;span class=&quot;pagelinks&quot;&gt;
+
+
+
+
+index
+
+&lt;/span&gt;
+&lt;span class=&quot;desc&quot;&gt;&lt;br /&gt;Changed by:&lt;/span&gt;
+&lt;span class=&quot;committer&quot;&gt;
+
+edmonds
+
+&lt;/span&gt;
+&lt;span class=&quot;desc&quot;&gt;&lt;br /&gt;Commit type:&lt;/span&gt;
+&lt;span class=&quot;committype&quot;&gt;git&lt;/span&gt;
+&lt;span class=&quot;desc&quot;&gt;&lt;br /&gt;Date:&lt;/span&gt;
+&lt;span class=&quot;changedate&quot;&gt;&lt;span class=&quot;date&quot;&gt;at midnight 06/17/13&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;desc&quot;&gt;&lt;br /&gt;&lt;/span&gt;
+
+&lt;/div&gt;
+&lt;div class=&quot;changelog&quot;&gt;
+
+
+index: &amp;quot;command line&amp;quot; -&amp;gt; &amp;quot;command-line&amp;quot;&lt;br /&gt;
+
+
+&lt;/div&gt;
+
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>change to About Examples Source dnstap.setup index on dnstap</title>
+
+	<id>http://dnstap.info/recentchanges/change_b0baf05f70d4c5a8ca0c9a57b664b75d0826eccd/</id>
+
+	<link href="http://dnstap.info/recentchanges/#change-b0baf05f70d4c5a8ca0c9a57b664b75d0826eccd"/>
+
+	<author><name>edmonds</name></author>
+
+
+
+
+
+	<updated>2013-06-18T03:47:14Z</updated>
+	<published>2013-06-18T03:47:14Z</published>
+
+	<content type="html" xml:lang="en">
+	
+
+
+
+
+
+&lt;div id=&quot;change-b0baf05f70d4c5a8ca0c9a57b664b75d0826eccd&quot; class=&quot;metadata&quot;&gt;
+&lt;span class=&quot;desc&quot;&gt;&lt;br /&gt;Changed pages:&lt;/span&gt;
+&lt;span class=&quot;pagelinks&quot;&gt;
+
+
+
+
+About
+
+Examples
+
+Source
+
+dnstap.setup
+
+index
+
+&lt;/span&gt;
+&lt;span class=&quot;desc&quot;&gt;&lt;br /&gt;Changed by:&lt;/span&gt;
+&lt;span class=&quot;committer&quot;&gt;
+
+edmonds
+
+&lt;/span&gt;
+&lt;span class=&quot;desc&quot;&gt;&lt;br /&gt;Commit type:&lt;/span&gt;
+&lt;span class=&quot;committype&quot;&gt;git&lt;/span&gt;
+&lt;span class=&quot;desc&quot;&gt;&lt;br /&gt;Date:&lt;/span&gt;
+&lt;span class=&quot;changedate&quot;&gt;&lt;span class=&quot;date&quot;&gt;Monday night 06/17/13&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;desc&quot;&gt;&lt;br /&gt;&lt;/span&gt;
+
+&lt;/div&gt;
+&lt;div class=&quot;changelog&quot;&gt;
+
+
+extract Source, Examples, About pages from index&lt;br /&gt;
+
+
+&lt;/div&gt;
+
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>change to index on dnstap</title>
+
+	<id>http://dnstap.info/recentchanges/change_c7f190fd492d06dc63e8dcd3d849a8e193630bca/</id>
+
+	<link href="http://dnstap.info/recentchanges/#change-c7f190fd492d06dc63e8dcd3d849a8e193630bca"/>
+
+	<author><name>edmonds</name></author>
+
+
+
+
+
+	<updated>2013-06-18T00:14:14Z</updated>
+	<published>2013-06-18T00:14:14Z</published>
+
+	<content type="html" xml:lang="en">
+	
+
+
+
+
+
+&lt;div id=&quot;change-c7f190fd492d06dc63e8dcd3d849a8e193630bca&quot; class=&quot;metadata&quot;&gt;
+&lt;span class=&quot;desc&quot;&gt;&lt;br /&gt;Changed pages:&lt;/span&gt;
+&lt;span class=&quot;pagelinks&quot;&gt;
+
+
+
+
+index
+
+&lt;/span&gt;
+&lt;span class=&quot;desc&quot;&gt;&lt;br /&gt;Changed by:&lt;/span&gt;
+&lt;span class=&quot;committer&quot;&gt;
+
+edmonds
+
+&lt;/span&gt;
+&lt;span class=&quot;desc&quot;&gt;&lt;br /&gt;Commit type:&lt;/span&gt;
+&lt;span class=&quot;committype&quot;&gt;git&lt;/span&gt;
+&lt;span class=&quot;desc&quot;&gt;&lt;br /&gt;Date:&lt;/span&gt;
+&lt;span class=&quot;changedate&quot;&gt;&lt;span class=&quot;date&quot;&gt;late Monday evening 06/17/13&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;desc&quot;&gt;&lt;br /&gt;&lt;/span&gt;
+
+&lt;/div&gt;
+&lt;div class=&quot;changelog&quot;&gt;
+
+
+index: use relative link for slide deck&lt;br /&gt;
+
+
+&lt;/div&gt;
+
+
+
+	</content>
+
+
+
+</entry>
 <entry>
 	<title>change to slides/dnstap.html slides/papers/edmonds_passive_dns_architecture.pdf slides/papers/weimer_passive_dns_replication.pdf on dnstap</title>
 

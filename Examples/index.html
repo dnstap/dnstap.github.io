@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>dnstap/Examples</title>
+
+    
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="../bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../local.css" type="text/css" />
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+        <div class="container">
+          <a class="brand" href="../">dnstap</a>
+          <ul class="nav">
+            
+                
+                    <li ><a href="../Source/">Source</a></li>
+                
+            
+                
+                    <li class="active"><a href="./">Examples</a></li>
+                
+            
+                
+            
+                
+            
+          </ul>
+          <ul class="nav pull-right">
+            
+                
+                
+            
+                
+                
+            
+                
+                    <li ><a href="../About/">About</a></li>
+                
+            
+                
+                    <li ><a href="../recentchanges/">RecentChanges</a></li>
+                
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="content">
+          <header class="page-header">
+            <h1>Examples</h1>
+          </header>
+
+            <h3>Unbound DNS server</h3>
+
+<p>Add the following lines to <code>unbound.conf</code>:</p>
+
+<pre><code>server:
+    dnstap-enable: yes
+    dnstap-socket-path: "/var/run/unbound/dnstap.sock"
+    dnstap-send-identity: yes
+    dnstap-send-version: yes
+    dnstap-log-resolver-response-messages: yes
+    dnstap-log-client-query-messages: yes
+</code></pre>
+
+<p>Start Unbound and it will begin sending <code>dnstap</code> payloads to the <code>AF_UNIX</code> socket specified by the <code>dnstap-socket-path</code> variable.</p>
+
+<p>You also need a capture tool listening on the other side of the socket.</p>
+
+<h3><em>dnstap</em> command-line tool</h3>
+
+<p>The following command listens on the given <code>AF_UNIX</code> socket and decodes messages to <code>stdout</code>.</p>
+
+<pre><code>dnstap -s /var/run/unbound/dnstap.sock
+</code></pre>
+
+<p>The following command listens on the given <code>AF_UNIX</code> socket and saves message payloads to a binary <code>dnstap</code>-format log file.</p>
+
+<pre><code>dnstap -s /tmp/dnstap.sock -w /tmp/test.dnstap
+</code></pre>
+
+<p>The following command reads a previously saved <code>dnstap</code>-format log file and writes <a href="http://en.wikipedia.org/wiki/YAML">YAML</a>-formatted output to <code>stdout</code>. This format is extremely verbose.</p>
+
+<pre><code>dnstap -y -r test.dnstap
+</code></pre>
+
+<p>The following command reads a previously saved <code>dnstap</code>-format log file and writes <a href="http://en.wikipedia.org/wiki/YAML">YAML</a>-formatted output to the given output file. This format is extremely verbose.</p>
+
+<pre><code>dnstap -y -r test.dnstap -w test.yaml
+</code></pre>
+
+      </div>
+    </div>
+
+  </body>
+</html>

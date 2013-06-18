@@ -397,7 +397,10 @@ repositories:
 
 # bootmenu plugin
 # Primary menu
-#bootmenu:
+bootmenu:
+- Source
+- Examples
 # Secondary menu
 bootmenu2:
+- About
 - RecentChanges

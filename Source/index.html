@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>dnstap/Source</title>
+
+    
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="../bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../local.css" type="text/css" />
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+        <div class="container">
+          <a class="brand" href="../">dnstap</a>
+          <ul class="nav">
+            
+                
+                    <li class="active"><a href="./">Source</a></li>
+                
+            
+                
+                    <li ><a href="../Examples/">Examples</a></li>
+                
+            
+                
+            
+                
+            
+          </ul>
+          <ul class="nav pull-right">
+            
+                
+                
+            
+                
+                
+            
+                
+                    <li ><a href="../About/">About</a></li>
+                
+            
+                
+                    <li ><a href="../recentchanges/">RecentChanges</a></li>
+                
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="content">
+          <header class="page-header">
+            <h1>Source</h1>
+          </header>
+
+            <p>The following code repositories are available. See the <a href="../Examples/">Examples</a> page for example <code>dnstap</code> usage.</p>
+
+<h3><a href="https://github.com/dnstap/dnstap">dnstap</a></h3>
+
+<p>This is the C library for adding <code>dnstap</code> support to a DNS server.</p>
+
+<p>You need this if you're a DNS programmer adding <code>dnstap</code> support to a nameserver, or if you're compiling a nameserver with <code>dnstap</code> support.</p>
+
+<p>Release tarballs of the library have no extra dependencies, but a <code>git</code> checkout requires the <a href="https://code.google.com/p/protobuf-c/"><code>protobuf-c</code></a> compiler and the <code>autotools</code> to be installed, since no generated files are checked in to this repository.</p>
+
+<pre><code>$ sudo apt-get install protobuf-c-compiler
+$ git clone git://github.com/dnstap/dnstap.git
+$ cd dnstap &amp;&amp; ./autogen.sh &amp;&amp; ./configure &amp;&amp; make &amp;&amp; sudo make install
+</code></pre>
+
+<h3><a href="https://github.com/dnstap/dnstap.pb">dnstap.pb</a></h3>
+
+<p>This is the <a href="https://code.google.com/p/protobuf/">Protocol Buffers</a> schema defining the layout of <code>dnstap</code> payloads. Use this if you want to process <code>dnstap</code> payloads in a programming language with <code>protobuf</code> support, or if you want to extend the <code>dnstap</code> schema to support new event types.</p>
+
+<pre><code>$ git clone git://github.com/dnstap/dnstap.pb.git
+$ cd dnstap.pb
+$ protoc-c --c_out=. dnstap.proto
+$ protoc --cpp_out=. dnstap.proto
+$ protoc --python_out=. dnstap.proto
+$ protoc --go_out=. dnstap.proto
+</code></pre>
+
+<h3><a href="https://github.com/dnstap/unbound">unbound</a></h3>
+
+<p>This is <a href="http://nlnetlabs.nl/">NLNet Labs'</a> <a href="http://unbound.net/">Unbound</a> recursive DNS server, patched to generate <code>dnstap</code> payloads. <code>dnstap</code> support is developed on the <code>branches/dnstap</code> branch and periodically merged to <code>master</code>.</p>
+
+<p>Building Unbound with <code>dnstap</code> support requires that the <code>dnstap</code> library be installed first, see above. <code>dnstap</code> support for Unbound also introduces a build dependency on the <code>pkg-config</code> utility.</p>
+
+<p>Two new <code>./configure</code> arguments have been added: <code>--enable-dnstap</code> to build with <code>dnstap</code> support, and <code>--with-dnstap-socket-path</code> to set the default <code>dnstap</code> socket path.</p>
+
+<pre><code>$ git clone git@github.com:dnstap/unbound.git
+$ cd unbound &amp;&amp; ./configure --enable-dnstap &amp;&amp; make &amp;&amp; sudo make install
+</code></pre>
+
+<h3><a href="https://github.com/dnstap/golang-dnstap">golang-dnstap</a></h3>
+
+<p>This is the <a href="http://golang.org/">Go</a> language library for working with <code>dnstap</code> sockets, log files, and message payloads. It also includes a command-line capture tool.</p>
+
+<pre><code># apt-get install golang
+$ go get -u github.com/dnstap/golang-dnstap/dnstap
+</code></pre>
+
+      </div>
+    </div>
+
+  </body>
+</html>
