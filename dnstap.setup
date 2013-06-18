@@ -39,7 +39,6 @@ add_plugins:
 - bootmenu
 - favicon
 - goodstuff
-- prettydate
 - rawhtml
 - repolist
 # plugins to disable
