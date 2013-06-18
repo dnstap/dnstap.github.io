@@ -44,6 +44,7 @@ add_plugins:
 # plugins to disable
 disable_plugins:
 - editpage
+- htmlscrubber
 - openid
 - passwordauth
 - smiley
