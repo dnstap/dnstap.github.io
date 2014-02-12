@@ -5,10 +5,8 @@
  */
 
 /* html5 compat */
-article,
-header,
-footer,
-nav {
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
 	display: block;
 }
 
@@ -58,7 +56,8 @@ nav {
 	border-bottom: 1px solid #000;
 }
 
-.inlinecontent {
+.inlinecontent,
+.inlineenclosure {
 	margin-top: .4em;
 }
 
@@ -323,6 +322,7 @@ div.progress-done {
 .popup .paren,
 .popup .expand {
 	display: none;
+	text-align: left;
 }
 .popup:hover .balloon,
 .popup:focus .balloon {

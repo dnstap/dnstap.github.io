@@ -30,6 +30,10 @@
                 
             
                 
+                    <li ><a href="../Tutorials/">Tutorials</a></li>
+                
+            
+                
                     <li ><a href="../Architecture/">Architecture</a></li>
                 
             
@@ -39,6 +43,9 @@
             
           </ul>
           <ul class="nav pull-right">
+            
+                
+                
             
                 
                 
@@ -89,12 +96,12 @@
 
 <p>The following command listens on the given <code>AF_UNIX</code> socket and decodes messages to <code>stdout</code>.</p>
 
-<pre><code>dnstap -s /var/run/unbound/dnstap.sock
+<pre><code>dnstap -u /var/run/unbound/dnstap.sock
 </code></pre>
 
 <p>The following command listens on the given <code>AF_UNIX</code> socket and saves message payloads to a binary <code>dnstap</code>-format log file.</p>
 
-<pre><code>dnstap -s /tmp/dnstap.sock -w /tmp/test.dnstap
+<pre><code>dnstap -u /tmp/dnstap.sock -w /tmp/test.dnstap
 </code></pre>
 
 <p>The following command reads a previously saved <code>dnstap</code>-format log file and writes <a href="http://en.wikipedia.org/wiki/YAML">YAML</a>-formatted output to <code>stdout</code>. This format is extremely verbose.</p>

@@ -30,6 +30,10 @@
                 
             
                 
+                    <li ><a href="../../Tutorials/">Tutorials</a></li>
+                
+            
+                
                     <li ><a href="../../Architecture/">Architecture</a></li>
                 
             
@@ -39,6 +43,9 @@
             
           </ul>
           <ul class="nav pull-right">
+            
+                
+                
             
                 
                 
@@ -128,7 +135,8 @@ to match all openid users, use <code>user(*://*)</code></li>
 <li>"<code>admin()</code>" - tests whether a modification is being made by one of the
 wiki admins.</li>
 <li>"<code>ip(address)</code>" - tests whether a modification is being made from the
-specified IP address.</li>
+specified IP address. Glob patterns can be used in the address. For
+example, <code>ip(127.0.0.*)</code></li>
 <li>"<code>comment(glob)</code>" - matches comments to a page matching the glob.</li>
 <li>"<code>comment_pending(glob)</code>" - matches unmoderated, pending comments.</li>
 <li>"<code>postcomment(glob)</code>" - matches only when comments are being

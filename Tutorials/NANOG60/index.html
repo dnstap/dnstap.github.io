@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>dnstap/Tutorials/NANOG60</title>
+
+    
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="../../bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../local.css" type="text/css" />
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+        <div class="container">
+          <a class="brand" href="../../">dnstap</a>
+          <ul class="nav">
+            
+                
+                    <li ><a href="../../Source/">Source</a></li>
+                
+            
+                
+                    <li ><a href="../../Examples/">Examples</a></li>
+                
+            
+                
+                    <li class="active"><a href="../">Tutorials</a></li>
+                
+            
+                
+                    <li ><a href="../../Architecture/">Architecture</a></li>
+                
+            
+                
+            
+                
+            
+          </ul>
+          <ul class="nav pull-right">
+            
+                
+                
+            
+                
+                
+            
+                
+                
+            
+                
+                
+            
+                
+                    <li ><a href="../../About/">About</a></li>
+                
+            
+                
+                    <li ><a href="../../recentchanges/">RecentChanges</a></li>
+                
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="content">
+          <header class="page-header">
+            <h1>NANOG60</h1>
+          </header>
+
+            <p>A "NANOG edition" of <code>dnstap</code> was produced for the NANOG 60 presentation. It consists of a patched Unbound 1.4.21 server, the <code>dnstap</code> command-line tool, and the necessary dependencies.</p>
+
+<p>The NANOG 60 tarball snapshots and related files can be downloaded <a href="https://dl.farsightsecurity.com/dist/presentations/nanog60">here</a>.</p>
+
+<h3>Prerequisites</h3>
+
+<p>If compiling everything from source, build environments for the C, C++, and Go programming languages will be required.</p>
+
+<p>The <code>pkg-config</code> utility is required.</p>
+
+<p>The Go binary distribution from <a href="http://golang.org/doc/install">golang.org</a> should be used, unless your OS includes a recent (Go 1.1 or 1.2+) release.</p>
+
+<p><a href="https://code.google.com/p/protobuf/">Google protobuf</a> is required. On Debian systems, the <code>protobuf-compiler</code>, <code>libprotobuf-dev</code>, and <code>libprotoc-dev</code> packages can be installed instead.</p>
+
+<h3>C components</h3>
+
+<p>Install the <code>fstrm</code> library.</p>
+
+<pre><code>wget https://dl.farsightsecurity.com/dist/presentations/nanog60/fstrm-0.1.0.tar.gz
+tar xvf fstrm-0.1.0.tar.gz
+cd fstrm-0.1.0
+./configure &amp;&amp; make &amp;&amp; sudo make install
+</code></pre>
+
+<p>Install the <code>protobuf-c</code> library. (Do not use the <code>protobuf-c</code> packages from your distribution. They are too old.)</p>
+
+<pre><code>wget https://dl.farsightsecurity.com/dist/presentations/nanog60/protobuf-c-1.0.0-pre.tar.gz
+tar xvf protobuf-c-1.0.0-pre.tar.gz
+cd protobuf-c-1.0.0-pre
+./configure &amp;&amp; make &amp;&amp; sudo make install
+</code></pre>
+
+<h3>Go components</h3>
+
+<p>You may be able to install the needed components with the following command, if your Go environment is already set up:</p>
+
+<pre><code>go get -u -v github.com/dnstap/golang-dnstap/dnstap
+</code></pre>
+
+<p>Or, the tarball snapshots can be used for all of the Go components.</p>
+
+<pre><code>export GOPATH=~/go
+export PATH=~/go/bin:$PATH
+cd ~/go
+wget https://dl.farsightsecurity.com/dist/presentations/nanog60/golang-dns.tar.gz
+wget https://dl.farsightsecurity.com/dist/presentations/nanog60/golang-dnstap.tar.gz
+wget https://dl.farsightsecurity.com/dist/presentations/nanog60/golang-framestream.tar.gz
+wget https://dl.farsightsecurity.com/dist/presentations/nanog60/golang-goprotobuf.tar.gz
+tar xvf golang-dns.tar.gz
+tar xvf golang-dnstap.tar.gz
+tar xvf golang-framestream.tar.gz
+tar xvf golang-goprotobuf.tar.gz
+go install -v github.com/dnstap/golang-dnstap/dnstap
+</code></pre>
+
+<p>You should now have a <code>dnstap</code> utility installed in <code>~/go/bin</code>.</p>
+
+<h3>Unbound with dnstap support</h3>
+
+<p>Install Unbound patched with <code>dnstap</code> support. Note that <code>dnstap</code> support must be turned on with a configure parameter and must be enabled at runtime in the <code>unbound.conf</code> file.</p>
+
+<pre><code>wget https://dl.farsightsecurity.com/dist/presentations/nanog60/unbound-1.4.21+dnstap1.tar.gz
+tar xvf unbound-1.4.21+dnstap1.tar.gz
+cd unbound-1.4.21+dnstap1
+./configure --enable-dnstap &amp;&amp; make &amp;&amp; sudo make install
+</code></pre>
+
+<p>Download the example <code>unbound.conf</code> file. This config file runs <code>unbound</code> on localhost, port 53053, and enables <code>dnstap</code> output to the socket <code>/tmp/dnstap.sock</code>.</p>
+
+<pre><code>wget -O /tmp/unbound.conf https://dl.farsightsecurity.com/dist/presentations/nanog60/unbound.conf
+</code></pre>
+
+<h3>Running</h3>
+
+<p>Run the <code>dnstap</code> utility, listening on the socket <code>/tmp/dnstap.sock</code> and writing binary payload data to <code>/tmp/dnstap.out</code>. Note that this utility does not daemonize.</p>
+
+<pre><code>dnstap -u /tmp/dnstap.sock -w /tmp/dnstap.out
+</code></pre>
+
+<p>Run the <code>unbound</code> server with the example <code>unbound.conf</code> file. Note that the server won't detach from the terminal and daemonize. Make sure you are using the patched Unbound that was built in the previous step.</p>
+
+<pre><code>unbound -c /tmp/unbound.conf
+</code></pre>
+
+<p>You should see something like the following output from the <code>unbound</code> server. Note the log output about <code>dnstap</code>:</p>
+
+<pre><code>Feb 11 23:02:42 unbound[19627:0] notice: init module 0: validator
+Feb 11 23:02:42 unbound[19627:0] notice: init module 1: iterator
+Feb 11 23:02:42 unbound[19627:0] notice: opening dnstap socket /tmp/dnstap.sock
+Feb 11 23:02:42 unbound[19627:0] notice: dnstap identity field set to "nanog60-dnstap-demo"
+Feb 11 23:02:42 unbound[19627:0] notice: dnstap version field set to "unbound 1.4.21+dnstap1"
+Feb 11 23:02:42 unbound[19627:0] notice: dnstap Message/RESOLVER_QUERY enabled
+Feb 11 23:02:42 unbound[19627:0] notice: dnstap Message/RESOLVER_RESPONSE enabled
+Feb 11 23:02:42 unbound[19627:0] notice: dnstap Message/CLIENT_QUERY enabled
+Feb 11 23:02:42 unbound[19627:0] notice: dnstap Message/CLIENT_RESPONSE enabled
+Feb 11 23:02:42 unbound[19627:0] notice: dnstap Message/FORWARDER_QUERY enabled
+Feb 11 23:02:42 unbound[19627:0] notice: dnstap Message/FORWARDER_RESPONSE enabled
+Feb 11 23:02:42 unbound[19627:0] info: start of service (unbound 1.4.21).
+</code></pre>
+
+<p>Once <code>unbound</code> starts up and connects to the <code>dnstap</code> socket, you should see something like the following output from the <code>dnstap</code> utility:</p>
+
+<pre><code>dnstap: opened input socket /tmp/dnstap.sock
+dnstap.FrameStreamSockInput: accepted a socket connection
+</code></pre>
+
+<p>Send DNS queries to the Unbound server. Make sure the queries are sent to the right server and port. The example <code>unbound.conf</code> listens on <code>127.0.0.1</code>, port <code>53053</code>.</p>
+
+<pre><code>dig -p 53053 @127.0.0.1 dnstap.info
+dig -p 53053 @127.0.0.1 www.nanog.org
+</code></pre>
+
+<p>Shut down the Unbound server.</p>
+
+<p>Shut down the <code>dnstap</code> utility.</p>
+
+<p>The file <code>/tmp/dnstap.out</code> now contains <code>dnstap</code> log messages that can be decoded with the <code>dnstap</code> utility.</p>
+
+<pre><code>dnstap -r /tmp/dnstap.out
+dnstap -r /tmp/dnstap.out -y
+</code></pre>
+
+      </div>
+    </div>
+
+  </body>
+</html>

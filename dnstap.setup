@@ -400,6 +400,7 @@ repositories:
 bootmenu:
 - Source
 - Examples
+- Tutorials
 - Architecture
 # Secondary menu
 bootmenu2:

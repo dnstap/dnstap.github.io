@@ -30,6 +30,10 @@
                 
             
                 
+                    <li ><a href="../Tutorials/">Tutorials</a></li>
+                
+            
+                
                     <li ><a href="../Architecture/">Architecture</a></li>
                 
             
@@ -39,6 +43,9 @@
             
           </ul>
           <ul class="nav pull-right">
+            
+                
+                
             
                 
                 
@@ -70,24 +77,11 @@
 
             <p>The following code repositories are available. See the <a href="../Examples/">Examples</a> page for example <code>dnstap</code> usage.</p>
 
-<h3><a href="https://github.com/dnstap/dnstap">dnstap</a></h3>
-
-<p>This is the C library for adding <code>dnstap</code> support to a DNS server.</p>
-
-<p>You need this if you're a DNS programmer adding <code>dnstap</code> support to a nameserver, or if you're compiling a nameserver with <code>dnstap</code> support.</p>
-
-<p>Release tarballs of the library have no extra dependencies, but a <code>git</code> checkout requires the <a href="https://code.google.com/p/protobuf-c/"><code>protobuf-c</code></a> compiler and the <code>autotools</code> to be installed, since no generated files are checked in to this repository.</p>
-
-<pre><code>$ sudo apt-get install protobuf-c-compiler
-$ git clone git://github.com/dnstap/dnstap.git
-$ cd dnstap &amp;&amp; ./autogen.sh &amp;&amp; ./configure &amp;&amp; make &amp;&amp; sudo make install
-</code></pre>
-
 <h3><a href="https://github.com/dnstap/dnstap.pb">dnstap.pb</a></h3>
 
-<p>This is the <a href="https://code.google.com/p/protobuf/">Protocol Buffers</a> schema defining the layout of <code>dnstap</code> payloads. Use this if you want to process <code>dnstap</code> payloads in a programming language with <code>protobuf</code> support, or if you want to extend the <code>dnstap</code> schema to support new event types.</p>
+<p>This is the <a href="https://code.google.com/p/protobuf/">Protocol Buffers</a> schema defining the layout of <code>dnstap</code> payloads. Use this if you want to process <code>dnstap</code> payloads in a programming language with <code>protobuf</code> support, or if you want to extend the <code>dnstap</code> schema to support new event types. It is not needed otherwise.</p>
 
-<pre><code>$ git clone git://github.com/dnstap/dnstap.pb.git
+<pre><code>$ git clone https://github.com/dnstap/dnstap.pb.git
 $ cd dnstap.pb
 $ protoc-c --c_out=. dnstap.proto
 $ protoc --cpp_out=. dnstap.proto
@@ -95,24 +89,49 @@ $ protoc --python_out=. dnstap.proto
 $ protoc --go_out=. dnstap.proto
 </code></pre>
 
-<h3><a href="https://github.com/dnstap/unbound">unbound</a></h3>
+<h3><a href="https://github.com/farsightsec/fstrm">fstrm</a></h3>
 
-<p>This is <a href="http://nlnetlabs.nl/">NLNet Labs'</a> <a href="http://unbound.net/">Unbound</a> recursive DNS server, patched to generate <code>dnstap</code> payloads. <code>dnstap</code> support is developed on the <code>branches/dnstap</code> branch and periodically merged to <code>master</code>.</p>
+<p>This is <code>fstrm</code>, a Frame Streams implementation in C. It is the transport used for <code>dnstap</code> software written in C.</p>
 
-<p>Building Unbound with <code>dnstap</code> support requires that the <code>dnstap</code> library be installed first, see above. <code>dnstap</code> support for Unbound also introduces a build dependency on the <code>pkg-config</code> utility.</p>
+<pre><code>$ git clone https://github.com/farsightsec/fstrm.git
+$ cd fstrm &amp;&amp; ./autogen.sh &amp;&amp; ./configure &amp;&amp; make &amp;&amp; sudo make install
+</code></pre>
+
+<h3><a href="https://github.com/protobuf-c/protobuf-c">protobuf-c</a></h3>
+
+<p>This is <code>protobuf-c</code>, a Protocol Buffers implementation in C. It is the encoder used for <code>dnstap</code> software written in C. It requires that <a href="https://code.google.com/p/protobuf/">protobuf</a> be installed first.</p>
+
+<pre><code>$ git clone https://github.com/protobuf-c/protobuf-c.git
+$ cd protobuf-c &amp;&amp; ./autogen.sh &amp;&amp; ./configure &amp;&amp; make &amp;&amp; sudo make install
+</code></pre>
+
+<h3><a href="https://github.com/dnstap/unbound">Unbound with dnstap support</a></h3>
+
+<p>This is <a href="http://nlnetlabs.nl/">NLNet Labs'</a> <a href="http://unbound.net/">Unbound</a> recursive DNS server, patched to generate <code>dnstap</code> payloads. <code>dnstap</code> support is developed on separate branches corresponding to particular Unbound releases.</p>
+
+<p>Building Unbound with <code>dnstap</code> support requires that the <code>fstrm</code> and <code>protobuf-c</code> libraries be installed first. <code>dnstap</code> support for Unbound also introduces a build dependency on the <code>pkg-config</code> utility.</p>
 
 <p>Two new <code>./configure</code> arguments have been added: <code>--enable-dnstap</code> to build with <code>dnstap</code> support, and <code>--with-dnstap-socket-path</code> to set the default <code>dnstap</code> socket path.</p>
 
-<pre><code>$ git clone git@github.com:dnstap/unbound.git
-$ cd unbound &amp;&amp; ./configure --enable-dnstap &amp;&amp; make &amp;&amp; sudo make install
+<pre><code>$ git clone https://github.com/dnstap/unbound.git
+$ cd unbound
+$ git checkout origin/branches/dnstap-1.4.21-release
+$ ./configure --enable-dnstap &amp;&amp; make &amp;&amp; sudo make install
 </code></pre>
 
 <h3><a href="https://github.com/dnstap/golang-dnstap">golang-dnstap</a></h3>
 
-<p>This is the <a href="http://golang.org/">Go</a> language library for working with <code>dnstap</code> sockets, log files, and message payloads. It also includes a command-line capture tool.</p>
+<p>This is the <a href="http://golang.org/">Go</a> language library for working with <code>dnstap</code> sockets, log files, and message payloads. It includes a command-line capture tool, <code>dnstap</code>.</p>
 
-<pre><code># apt-get install golang
-$ go get -u github.com/dnstap/golang-dnstap/dnstap
+<pre><code>$ go get -u -v github.com/dnstap/golang-dnstap
+$ go get -u -v github.com/dnstap/golang-dnstap/dnstap
+</code></pre>
+
+<h3><a href="https://github.com/farsightsec/golang-framestream.git">golang-framestream</a></h3>
+
+<p>This is the <a href="http://golang.org/">Go</a> language library for working with Frame Streams. It is a dependency of <code>golang-dnstap</code>.</p>
+
+<pre><code>$ go get -u -v github.com/farsightsec/golang-framestream
 </code></pre>
 
       </div>
