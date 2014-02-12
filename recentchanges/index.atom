@@ -17,7 +17,69 @@
 
 <subtitle type="html">dnstap</subtitle>
 <generator uri="http://ikiwiki.info/">ikiwiki</generator>
-<updated>2014-02-12T04:20:16Z</updated>
+<updated>2014-02-12T17:24:53Z</updated>
+<entry>
+	<title>change to Tutorials/NANOG60 on dnstap</title>
+
+	<id>http://dnstap.info/recentchanges/change_bc2f3898e00ab84b79aa2c36ea5659d7d6828ccb/</id>
+
+	<link href="http://dnstap.info/recentchanges/#change-bc2f3898e00ab84b79aa2c36ea5659d7d6828ccb"/>
+
+	<author><name>edmonds</name></author>
+
+
+
+
+
+	<updated>2014-02-12T17:24:53Z</updated>
+	<published>2014-02-12T17:24:53Z</published>
+
+
+	<content type="html" xml:lang="en">
+	
+
+
+
+
+
+&lt;div id=&quot;change-bc2f3898e00ab84b79aa2c36ea5659d7d6828ccb&quot; class=&quot;metadata&quot;&gt;
+&lt;span class=&quot;desc&quot;&gt;&lt;br /&gt;Changed pages:&lt;/span&gt;
+&lt;span class=&quot;pagelinks&quot;&gt;
+
+
+
+
+Tutorials/NANOG60
+
+&lt;/span&gt;
+&lt;span class=&quot;desc&quot;&gt;&lt;br /&gt;Changed by:&lt;/span&gt;
+&lt;span class=&quot;committer&quot;&gt;
+
+edmonds
+
+&lt;/span&gt;
+&lt;span class=&quot;desc&quot;&gt;&lt;br /&gt;Commit type:&lt;/span&gt;
+&lt;span class=&quot;committype&quot;&gt;git&lt;/span&gt;
+&lt;span class=&quot;desc&quot;&gt;&lt;br /&gt;Date:&lt;/span&gt;
+&lt;span class=&quot;changedate&quot;&gt;&lt;span class=&quot;date&quot;&gt;12:24:53 02/12/14&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;desc&quot;&gt;&lt;br /&gt;&lt;/span&gt;
+
+&lt;/div&gt;
+&lt;div class=&quot;changelog&quot;&gt;
+
+
+Tutorials/NANOG60: add google.com dig&lt;br /&gt;
+
+
+&lt;/div&gt;
+
+&lt;!-- bc2f3898e00ab84b79aa2c36ea5659d7d6828ccb --&gt;
+
+	</content>
+
+
+
+</entry>
 <entry>
 	<title>change to slides/dnstap_nanog60.pdf on dnstap</title>
 

@@ -184,6 +184,7 @@ dnstap.FrameStreamSockInput: accepted a socket connection
 <p>Send DNS queries to the Unbound server. Make sure the queries are sent to the right server and port. The example <code>unbound.conf</code> listens on <code>127.0.0.1</code>, port <code>53053</code>.</p>
 
 <pre><code>dig -p 53053 @127.0.0.1 dnstap.info
+dig -p 53053 @127.0.0.1 www.google.com
 dig -p 53053 @127.0.0.1 www.nanog.org
 </code></pre>
 
