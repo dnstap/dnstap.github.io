@@ -17,7 +17,193 @@
 
 <subtitle type="html">dnstap</subtitle>
 <generator uri="http://ikiwiki.info/">ikiwiki</generator>
-<updated>2014-05-11T08:22:51Z</updated>
+<updated>2014-05-21T15:08:17Z</updated>
+<entry>
+	<title>change to index on dnstap</title>
+
+	<id>http://dnstap.info/recentchanges/change_f9a6ae4957ff32107d454711b21076349e05f6ad/</id>
+
+	<link href="http://dnstap.info/recentchanges/#change-f9a6ae4957ff32107d454711b21076349e05f6ad"/>
+
+	<author><name>edmonds</name></author>
+
+
+
+
+
+	<updated>2014-05-21T15:08:17Z</updated>
+	<published>2014-05-21T15:08:17Z</published>
+
+
+	<content type="html" xml:lang="en">
+	
+
+
+
+
+
+&lt;div id=&quot;change-f9a6ae4957ff32107d454711b21076349e05f6ad&quot; class=&quot;metadata&quot;&gt;
+&lt;span class=&quot;desc&quot;&gt;&lt;br /&gt;Changed pages:&lt;/span&gt;
+&lt;span class=&quot;pagelinks&quot;&gt;
+
+
+
+
+index
+
+&lt;/span&gt;
+&lt;span class=&quot;desc&quot;&gt;&lt;br /&gt;Changed by:&lt;/span&gt;
+&lt;span class=&quot;committer&quot;&gt;
+
+edmonds
+
+&lt;/span&gt;
+&lt;span class=&quot;desc&quot;&gt;&lt;br /&gt;Commit type:&lt;/span&gt;
+&lt;span class=&quot;committype&quot;&gt;git&lt;/span&gt;
+&lt;span class=&quot;desc&quot;&gt;&lt;br /&gt;Date:&lt;/span&gt;
+&lt;span class=&quot;changedate&quot;&gt;&lt;span class=&quot;date&quot;&gt;11:08:17 05/21/14&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;desc&quot;&gt;&lt;br /&gt;&lt;/span&gt;
+
+&lt;/div&gt;
+&lt;div class=&quot;changelog&quot;&gt;
+
+
+index: reorder, update presentations&lt;br /&gt;
+
+
+&lt;/div&gt;
+
+&lt;!-- f9a6ae4957ff32107d454711b21076349e05f6ad --&gt;
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>change to slides/dnstap_esync2014.pdf on dnstap</title>
+
+	<id>http://dnstap.info/recentchanges/change_e208510bb94c6cfabdf1648b394dc93f0c11486d/</id>
+
+	<link href="http://dnstap.info/recentchanges/#change-e208510bb94c6cfabdf1648b394dc93f0c11486d"/>
+
+	<author><name>edmonds</name></author>
+
+
+
+
+
+	<updated>2014-05-21T15:05:45Z</updated>
+	<published>2014-05-21T15:05:45Z</published>
+
+
+	<content type="html" xml:lang="en">
+	
+
+
+
+
+
+&lt;div id=&quot;change-e208510bb94c6cfabdf1648b394dc93f0c11486d&quot; class=&quot;metadata&quot;&gt;
+&lt;span class=&quot;desc&quot;&gt;&lt;br /&gt;Changed pages:&lt;/span&gt;
+&lt;span class=&quot;pagelinks&quot;&gt;
+
+
+
+
+slides/dnstap esync2014.pdf
+
+&lt;/span&gt;
+&lt;span class=&quot;desc&quot;&gt;&lt;br /&gt;Changed by:&lt;/span&gt;
+&lt;span class=&quot;committer&quot;&gt;
+
+edmonds
+
+&lt;/span&gt;
+&lt;span class=&quot;desc&quot;&gt;&lt;br /&gt;Commit type:&lt;/span&gt;
+&lt;span class=&quot;committype&quot;&gt;git&lt;/span&gt;
+&lt;span class=&quot;desc&quot;&gt;&lt;br /&gt;Date:&lt;/span&gt;
+&lt;span class=&quot;changedate&quot;&gt;&lt;span class=&quot;date&quot;&gt;11:05:45 05/21/14&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;desc&quot;&gt;&lt;br /&gt;&lt;/span&gt;
+
+&lt;/div&gt;
+&lt;div class=&quot;changelog&quot;&gt;
+
+
+slides/dnstap_esync2014.pdf: new&lt;br /&gt;
+
+
+&lt;/div&gt;
+
+&lt;!-- e208510bb94c6cfabdf1648b394dc93f0c11486d --&gt;
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>change to slides/dnstap_flocon2014.pdf on dnstap</title>
+
+	<id>http://dnstap.info/recentchanges/change_f48e0bb63313323eb731e0df2f702dfb2ab3176e/</id>
+
+	<link href="http://dnstap.info/recentchanges/#change-f48e0bb63313323eb731e0df2f702dfb2ab3176e"/>
+
+	<author><name>edmonds</name></author>
+
+
+
+
+
+	<updated>2014-05-21T15:05:36Z</updated>
+	<published>2014-05-21T15:05:36Z</published>
+
+
+	<content type="html" xml:lang="en">
+	
+
+
+
+
+
+&lt;div id=&quot;change-f48e0bb63313323eb731e0df2f702dfb2ab3176e&quot; class=&quot;metadata&quot;&gt;
+&lt;span class=&quot;desc&quot;&gt;&lt;br /&gt;Changed pages:&lt;/span&gt;
+&lt;span class=&quot;pagelinks&quot;&gt;
+
+
+
+
+slides/dnstap flocon2014.pdf
+
+&lt;/span&gt;
+&lt;span class=&quot;desc&quot;&gt;&lt;br /&gt;Changed by:&lt;/span&gt;
+&lt;span class=&quot;committer&quot;&gt;
+
+edmonds
+
+&lt;/span&gt;
+&lt;span class=&quot;desc&quot;&gt;&lt;br /&gt;Commit type:&lt;/span&gt;
+&lt;span class=&quot;committype&quot;&gt;git&lt;/span&gt;
+&lt;span class=&quot;desc&quot;&gt;&lt;br /&gt;Date:&lt;/span&gt;
+&lt;span class=&quot;changedate&quot;&gt;&lt;span class=&quot;date&quot;&gt;11:05:36 05/21/14&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;desc&quot;&gt;&lt;br /&gt;&lt;/span&gt;
+
+&lt;/div&gt;
+&lt;div class=&quot;changelog&quot;&gt;
+
+
+slides/dnstap_flocon2014.pdf: new&lt;br /&gt;
+
+
+&lt;/div&gt;
+
+&lt;!-- f48e0bb63313323eb731e0df2f702dfb2ab3176e --&gt;
+
+	</content>
+
+
+
+</entry>
 <entry>
 	<title>change to index on dnstap</title>
 
