@@ -17,7 +17,193 @@
 
 <subtitle type="html">dnstap</subtitle>
 <generator uri="http://ikiwiki.info/">ikiwiki</generator>
-<updated>2014-06-04T14:53:00Z</updated>
+<updated>2014-07-11T18:22:30Z</updated>
+<entry>
+	<title>change to Examples on dnstap</title>
+
+	<id>http://dnstap.info/recentchanges/change_316fa3d572011479cc7b465c60b499f10dfd86f6/</id>
+
+	<link href="http://dnstap.info/recentchanges/#change-316fa3d572011479cc7b465c60b499f10dfd86f6"/>
+
+	<author><name>edmonds</name></author>
+
+
+
+
+
+	<updated>2014-07-11T18:22:30Z</updated>
+	<published>2014-07-11T18:22:30Z</published>
+
+
+	<content type="html" xml:lang="en">
+	
+
+
+
+
+
+&lt;div id=&quot;change-316fa3d572011479cc7b465c60b499f10dfd86f6&quot; class=&quot;metadata&quot;&gt;
+&lt;span class=&quot;desc&quot;&gt;&lt;br /&gt;Changed pages:&lt;/span&gt;
+&lt;span class=&quot;pagelinks&quot;&gt;
+
+
+
+
+Examples
+
+&lt;/span&gt;
+&lt;span class=&quot;desc&quot;&gt;&lt;br /&gt;Changed by:&lt;/span&gt;
+&lt;span class=&quot;committer&quot;&gt;
+
+edmonds
+
+&lt;/span&gt;
+&lt;span class=&quot;desc&quot;&gt;&lt;br /&gt;Commit type:&lt;/span&gt;
+&lt;span class=&quot;committype&quot;&gt;git&lt;/span&gt;
+&lt;span class=&quot;desc&quot;&gt;&lt;br /&gt;Date:&lt;/span&gt;
+&lt;span class=&quot;changedate&quot;&gt;&lt;span class=&quot;date&quot;&gt;14:22:30 07/11/14&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;desc&quot;&gt;&lt;br /&gt;&lt;/span&gt;
+
+&lt;/div&gt;
+&lt;div class=&quot;changelog&quot;&gt;
+
+
+Examples: clarify that unbound functions as a client to the AF_UNIX socket&lt;br /&gt;
+
+
+&lt;/div&gt;
+
+&lt;!-- 316fa3d572011479cc7b465c60b499f10dfd86f6 --&gt;
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>change to Source on dnstap</title>
+
+	<id>http://dnstap.info/recentchanges/change_1c0cb1270fbf1bf54971325aaba232766fd52ba9/</id>
+
+	<link href="http://dnstap.info/recentchanges/#change-1c0cb1270fbf1bf54971325aaba232766fd52ba9"/>
+
+	<author><name>edmonds</name></author>
+
+
+
+
+
+	<updated>2014-07-11T18:18:29Z</updated>
+	<published>2014-07-11T18:18:29Z</published>
+
+
+	<content type="html" xml:lang="en">
+	
+
+
+
+
+
+&lt;div id=&quot;change-1c0cb1270fbf1bf54971325aaba232766fd52ba9&quot; class=&quot;metadata&quot;&gt;
+&lt;span class=&quot;desc&quot;&gt;&lt;br /&gt;Changed pages:&lt;/span&gt;
+&lt;span class=&quot;pagelinks&quot;&gt;
+
+
+
+
+Source
+
+&lt;/span&gt;
+&lt;span class=&quot;desc&quot;&gt;&lt;br /&gt;Changed by:&lt;/span&gt;
+&lt;span class=&quot;committer&quot;&gt;
+
+edmonds
+
+&lt;/span&gt;
+&lt;span class=&quot;desc&quot;&gt;&lt;br /&gt;Commit type:&lt;/span&gt;
+&lt;span class=&quot;committype&quot;&gt;git&lt;/span&gt;
+&lt;span class=&quot;desc&quot;&gt;&lt;br /&gt;Date:&lt;/span&gt;
+&lt;span class=&quot;changedate&quot;&gt;&lt;span class=&quot;date&quot;&gt;14:18:29 07/11/14&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;desc&quot;&gt;&lt;br /&gt;&lt;/span&gt;
+
+&lt;/div&gt;
+&lt;div class=&quot;changelog&quot;&gt;
+
+
+Source: add note about protobuf-c 1.0.0&lt;br /&gt;
+
+
+&lt;/div&gt;
+
+&lt;!-- 1c0cb1270fbf1bf54971325aaba232766fd52ba9 --&gt;
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>change to Examples on dnstap</title>
+
+	<id>http://dnstap.info/recentchanges/change_4f3995a900225546f00f96c11b10a7e6246c617b/</id>
+
+	<link href="http://dnstap.info/recentchanges/#change-4f3995a900225546f00f96c11b10a7e6246c617b"/>
+
+	<author><name>edmonds</name></author>
+
+
+
+
+
+	<updated>2014-07-09T21:08:07Z</updated>
+	<published>2014-07-09T21:08:07Z</published>
+
+
+	<content type="html" xml:lang="en">
+	
+
+
+
+
+
+&lt;div id=&quot;change-4f3995a900225546f00f96c11b10a7e6246c617b&quot; class=&quot;metadata&quot;&gt;
+&lt;span class=&quot;desc&quot;&gt;&lt;br /&gt;Changed pages:&lt;/span&gt;
+&lt;span class=&quot;pagelinks&quot;&gt;
+
+
+
+
+Examples
+
+&lt;/span&gt;
+&lt;span class=&quot;desc&quot;&gt;&lt;br /&gt;Changed by:&lt;/span&gt;
+&lt;span class=&quot;committer&quot;&gt;
+
+edmonds
+
+&lt;/span&gt;
+&lt;span class=&quot;desc&quot;&gt;&lt;br /&gt;Commit type:&lt;/span&gt;
+&lt;span class=&quot;committype&quot;&gt;git&lt;/span&gt;
+&lt;span class=&quot;desc&quot;&gt;&lt;br /&gt;Date:&lt;/span&gt;
+&lt;span class=&quot;changedate&quot;&gt;&lt;span class=&quot;date&quot;&gt;17:08:07 07/09/14&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;desc&quot;&gt;&lt;br /&gt;&lt;/span&gt;
+
+&lt;/div&gt;
+&lt;div class=&quot;changelog&quot;&gt;
+
+
+Examples: fix unbound/dnstap config syntax&lt;br /&gt;
+
+
+&lt;/div&gt;
+
+&lt;!-- 4f3995a900225546f00f96c11b10a7e6246c617b --&gt;
+
+	</content>
+
+
+
+</entry>
 <entry>
 	<title>change to index on dnstap</title>
 

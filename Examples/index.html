@@ -79,7 +79,7 @@
 
 <p>Add the following lines to <code>unbound.conf</code>:</p>
 
-<pre><code>server:
+<pre><code>dnstap:
     dnstap-enable: yes
     dnstap-socket-path: "/var/run/unbound/dnstap.sock"
     dnstap-send-identity: yes
@@ -88,7 +88,7 @@
     dnstap-log-client-query-messages: yes
 </code></pre>
 
-<p>Start Unbound and it will begin sending <code>dnstap</code> payloads to the <code>AF_UNIX</code> socket specified by the <code>dnstap-socket-path</code> variable.</p>
+<p>Start Unbound and it will begin sending <code>dnstap</code> payloads to the <code>AF_UNIX</code> socket specified by the <code>dnstap-socket-path</code> variable. Note that Unbound will attempt to connect to this socket path and will periodically attempt to reconnect if a capture tool is not listening for connections. (This allows the capture tool to receive multiple streams of dnstap data over a single socket.)</p>
 
 <p>You also need a capture tool listening on the other side of the socket.</p>
 

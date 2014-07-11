@@ -105,6 +105,8 @@ $ cd fstrm &amp;&amp; ./autogen.sh &amp;&amp; ./configure &amp;&amp; make &amp;&
 $ cd protobuf-c &amp;&amp; ./autogen.sh &amp;&amp; ./configure &amp;&amp; make &amp;&amp; sudo make install
 </code></pre>
 
+<p>Note that some of the dnstap patchsets target <code>protobuf-c</code> 1.0.0, which has not been released yet. Currently, please use the <code>master</code> branch from GitHub.</p>
+
 <h3><a href="https://github.com/dnstap/unbound">Unbound with dnstap support</a></h3>
 
 <p>This is <a href="http://nlnetlabs.nl/">NLNet Labs'</a> <a href="http://unbound.net/">Unbound</a> recursive DNS server, patched to generate <code>dnstap</code> payloads. <code>dnstap</code> support is developed on separate branches corresponding to particular Unbound releases.</p>
