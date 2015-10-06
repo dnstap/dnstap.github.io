@@ -17,7 +17,131 @@
 
 <subtitle type="html">dnstap</subtitle>
 <generator uri="http://ikiwiki.info/">ikiwiki</generator>
-<updated>2015-10-06T19:16:25Z</updated>
+<updated>2015-10-06T19:25:59Z</updated>
+<entry>
+	<title>change to index on dnstap</title>
+
+	<id>http://dnstap.info/recentchanges/change_18405c6032b8450995c8a4df21aa0c6ff2c617ec/</id>
+
+	<link href="http://dnstap.info/recentchanges/#change-18405c6032b8450995c8a4df21aa0c6ff2c617ec"/>
+
+	<author><name>edmonds</name></author>
+
+
+
+
+
+	<updated>2015-10-06T19:25:59Z</updated>
+	<published>2015-10-06T19:25:59Z</published>
+
+
+	<content type="html" xml:lang="en">
+	
+
+
+
+
+
+&lt;div id=&quot;change-18405c6032b8450995c8a4df21aa0c6ff2c617ec&quot; class=&quot;metadata&quot;&gt;
+&lt;span class=&quot;desc&quot;&gt;&lt;br /&gt;Changed pages:&lt;/span&gt;
+&lt;span class=&quot;pagelinks&quot;&gt;
+
+
+
+
+index
+
+&lt;/span&gt;
+&lt;span class=&quot;desc&quot;&gt;&lt;br /&gt;Changed by:&lt;/span&gt;
+&lt;span class=&quot;committer&quot;&gt;
+
+edmonds
+
+&lt;/span&gt;
+&lt;span class=&quot;desc&quot;&gt;&lt;br /&gt;Commit type:&lt;/span&gt;
+&lt;span class=&quot;committype&quot;&gt;git&lt;/span&gt;
+&lt;span class=&quot;desc&quot;&gt;&lt;br /&gt;Date:&lt;/span&gt;
+&lt;span class=&quot;changedate&quot;&gt;&lt;span class=&quot;date&quot;&gt;15:25:59 10/06/15&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;desc&quot;&gt;&lt;br /&gt;&lt;/span&gt;
+
+&lt;/div&gt;
+&lt;div class=&quot;changelog&quot;&gt;
+
+
+index: Add OARC 2015 Montr&amp;eacute;al presentation&lt;br /&gt;
+
+
+&lt;/div&gt;
+
+&lt;!-- 18405c6032b8450995c8a4df21aa0c6ff2c617ec --&gt;
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>change to slides/dnstap-whoami_oarc2015_montreal.pdf on dnstap</title>
+
+	<id>http://dnstap.info/recentchanges/change_8a6c7d764f82f758235e2bcdaa78882a11f49d92/</id>
+
+	<link href="http://dnstap.info/recentchanges/#change-8a6c7d764f82f758235e2bcdaa78882a11f49d92"/>
+
+	<author><name>edmonds</name></author>
+
+
+
+
+
+	<updated>2015-10-06T19:25:35Z</updated>
+	<published>2015-10-06T19:25:35Z</published>
+
+
+	<content type="html" xml:lang="en">
+	
+
+
+
+
+
+&lt;div id=&quot;change-8a6c7d764f82f758235e2bcdaa78882a11f49d92&quot; class=&quot;metadata&quot;&gt;
+&lt;span class=&quot;desc&quot;&gt;&lt;br /&gt;Changed pages:&lt;/span&gt;
+&lt;span class=&quot;pagelinks&quot;&gt;
+
+
+
+
+slides/dnstap-whoami oarc2015 montreal.pdf
+
+&lt;/span&gt;
+&lt;span class=&quot;desc&quot;&gt;&lt;br /&gt;Changed by:&lt;/span&gt;
+&lt;span class=&quot;committer&quot;&gt;
+
+edmonds
+
+&lt;/span&gt;
+&lt;span class=&quot;desc&quot;&gt;&lt;br /&gt;Commit type:&lt;/span&gt;
+&lt;span class=&quot;committype&quot;&gt;git&lt;/span&gt;
+&lt;span class=&quot;desc&quot;&gt;&lt;br /&gt;Date:&lt;/span&gt;
+&lt;span class=&quot;changedate&quot;&gt;&lt;span class=&quot;date&quot;&gt;15:25:35 10/06/15&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;desc&quot;&gt;&lt;br /&gt;&lt;/span&gt;
+
+&lt;/div&gt;
+&lt;div class=&quot;changelog&quot;&gt;
+
+
+slides/dnstap-whoami_oarc2015_montreal.pdf: New&lt;br /&gt;
+
+
+&lt;/div&gt;
+
+&lt;!-- 8a6c7d764f82f758235e2bcdaa78882a11f49d92 --&gt;
+
+	</content>
+
+
+
+</entry>
 <entry>
 	<title>change to index on dnstap</title>
 
