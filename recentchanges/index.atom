@@ -17,7 +17,193 @@
 
 <subtitle type="html">dnstap</subtitle>
 <generator uri="http://ikiwiki.info/">ikiwiki</generator>
-<updated>2015-10-06T19:25:59Z</updated>
+<updated>2016-04-22T01:15:02Z</updated>
+<entry>
+	<title>change to Tutorials on dnstap</title>
+
+	<id>http://dnstap.info/recentchanges/change_fe40c01607b99b0ac76a8aa73933afff26eae3fd/</id>
+
+	<link href="http://dnstap.info/recentchanges/#change-fe40c01607b99b0ac76a8aa73933afff26eae3fd"/>
+
+	<author><name>edmonds</name></author>
+
+
+
+
+
+	<updated>2016-04-22T01:15:02Z</updated>
+	<published>2016-04-22T01:15:02Z</published>
+
+
+	<content type="html" xml:lang="en">
+	
+
+
+
+
+
+&lt;div id=&quot;change-fe40c01607b99b0ac76a8aa73933afff26eae3fd&quot; class=&quot;metadata&quot;&gt;
+&lt;span class=&quot;desc&quot;&gt;&lt;br /&gt;Changed pages:&lt;/span&gt;
+&lt;span class=&quot;pagelinks&quot;&gt;
+
+
+
+
+Tutorials
+
+&lt;/span&gt;
+&lt;span class=&quot;desc&quot;&gt;&lt;br /&gt;Changed by:&lt;/span&gt;
+&lt;span class=&quot;committer&quot;&gt;
+
+edmonds
+
+&lt;/span&gt;
+&lt;span class=&quot;desc&quot;&gt;&lt;br /&gt;Commit type:&lt;/span&gt;
+&lt;span class=&quot;committype&quot;&gt;git&lt;/span&gt;
+&lt;span class=&quot;desc&quot;&gt;&lt;br /&gt;Date:&lt;/span&gt;
+&lt;span class=&quot;changedate&quot;&gt;&lt;span class=&quot;date&quot;&gt;21:15:02 04/21/16&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;desc&quot;&gt;&lt;br /&gt;&lt;/span&gt;
+
+&lt;/div&gt;
+&lt;div class=&quot;changelog&quot;&gt;
+
+
+Tutorials: Add warning about Tutorials/NANOG60 being outdated&lt;br /&gt;
+
+
+&lt;/div&gt;
+
+&lt;!-- fe40c01607b99b0ac76a8aa73933afff26eae3fd --&gt;
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>change to Tutorials/NANOG60 on dnstap</title>
+
+	<id>http://dnstap.info/recentchanges/change_b23e925414992d5efacbf2976259bdd2054fcadf/</id>
+
+	<link href="http://dnstap.info/recentchanges/#change-b23e925414992d5efacbf2976259bdd2054fcadf"/>
+
+	<author><name>edmonds</name></author>
+
+
+
+
+
+	<updated>2016-04-22T01:14:32Z</updated>
+	<published>2016-04-22T01:14:32Z</published>
+
+
+	<content type="html" xml:lang="en">
+	
+
+
+
+
+
+&lt;div id=&quot;change-b23e925414992d5efacbf2976259bdd2054fcadf&quot; class=&quot;metadata&quot;&gt;
+&lt;span class=&quot;desc&quot;&gt;&lt;br /&gt;Changed pages:&lt;/span&gt;
+&lt;span class=&quot;pagelinks&quot;&gt;
+
+
+
+
+Tutorials/NANOG60
+
+&lt;/span&gt;
+&lt;span class=&quot;desc&quot;&gt;&lt;br /&gt;Changed by:&lt;/span&gt;
+&lt;span class=&quot;committer&quot;&gt;
+
+edmonds
+
+&lt;/span&gt;
+&lt;span class=&quot;desc&quot;&gt;&lt;br /&gt;Commit type:&lt;/span&gt;
+&lt;span class=&quot;committype&quot;&gt;git&lt;/span&gt;
+&lt;span class=&quot;desc&quot;&gt;&lt;br /&gt;Date:&lt;/span&gt;
+&lt;span class=&quot;changedate&quot;&gt;&lt;span class=&quot;date&quot;&gt;21:14:32 04/21/16&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;desc&quot;&gt;&lt;br /&gt;&lt;/span&gt;
+
+&lt;/div&gt;
+&lt;div class=&quot;changelog&quot;&gt;
+
+
+Tutorials/NANOG60: Add warning at top&lt;br /&gt;
+
+
+&lt;/div&gt;
+
+&lt;!-- b23e925414992d5efacbf2976259bdd2054fcadf --&gt;
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>change to Source on dnstap</title>
+
+	<id>http://dnstap.info/recentchanges/change_f07c0f089bd116b5c19deab8454acbebb26dae44/</id>
+
+	<link href="http://dnstap.info/recentchanges/#change-f07c0f089bd116b5c19deab8454acbebb26dae44"/>
+
+	<author><name>edmonds</name></author>
+
+
+
+
+
+	<updated>2016-04-22T01:08:20Z</updated>
+	<published>2016-04-22T01:08:20Z</published>
+
+
+	<content type="html" xml:lang="en">
+	
+
+
+
+
+
+&lt;div id=&quot;change-f07c0f089bd116b5c19deab8454acbebb26dae44&quot; class=&quot;metadata&quot;&gt;
+&lt;span class=&quot;desc&quot;&gt;&lt;br /&gt;Changed pages:&lt;/span&gt;
+&lt;span class=&quot;pagelinks&quot;&gt;
+
+
+
+
+Source
+
+&lt;/span&gt;
+&lt;span class=&quot;desc&quot;&gt;&lt;br /&gt;Changed by:&lt;/span&gt;
+&lt;span class=&quot;committer&quot;&gt;
+
+edmonds
+
+&lt;/span&gt;
+&lt;span class=&quot;desc&quot;&gt;&lt;br /&gt;Commit type:&lt;/span&gt;
+&lt;span class=&quot;committype&quot;&gt;git&lt;/span&gt;
+&lt;span class=&quot;desc&quot;&gt;&lt;br /&gt;Date:&lt;/span&gt;
+&lt;span class=&quot;changedate&quot;&gt;&lt;span class=&quot;date&quot;&gt;21:08:20 04/21/16&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;desc&quot;&gt;&lt;br /&gt;&lt;/span&gt;
+
+&lt;/div&gt;
+&lt;div class=&quot;changelog&quot;&gt;
+
+
+Source: Update Unbound now that dnstap support is mainline&lt;br /&gt;
+
+
+&lt;/div&gt;
+
+&lt;!-- f07c0f089bd116b5c19deab8454acbebb26dae44 --&gt;
+
+	</content>
+
+
+
+</entry>
 <entry>
 	<title>change to index on dnstap</title>
 

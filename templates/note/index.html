@@ -75,13 +75,16 @@
             <h1>note</h1>
           </header>
 
-            <div class="notebox">
+            <p>[[!templatebody  &lt;&lt;ENDBODY</p>
+
+<div class="notebox">
 <TMPL_VAR text>
 </div>
 
 
-<p><TMPL_UNLESS text>
-Use this template to insert a note into a page. The note will be styled to
+<p>ENDBODY]]</p>
+
+<p>Use this template to insert a note into a page. The note will be styled to
 float to the right of other text on the page. This template has one
 parameter:</p>
 
@@ -89,8 +92,6 @@ parameter:</p>
 <li>`text` - the text to display in the note
 </ul>
 
-
-<p></TMPL_UNLESS></p>
 
       </div>
     </div>

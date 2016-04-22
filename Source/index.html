@@ -105,19 +105,17 @@ $ cd fstrm &amp;&amp; ./autogen.sh &amp;&amp; ./configure &amp;&amp; make &amp;&
 $ cd protobuf-c &amp;&amp; ./autogen.sh &amp;&amp; ./configure &amp;&amp; make &amp;&amp; sudo make install
 </code></pre>
 
-<p>Note that some of the dnstap patchsets target <code>protobuf-c</code> 1.0.0, which has not been released yet. Currently, please use the <code>master</code> branch from GitHub.</p>
-
 <h3><a href="https://github.com/dnstap/unbound">Unbound with dnstap support</a></h3>
 
-<p>This is <a href="http://nlnetlabs.nl/">NLNet Labs'</a> <a href="http://unbound.net/">Unbound</a> recursive DNS server, patched to generate <code>dnstap</code> payloads. <code>dnstap</code> support is developed on separate branches corresponding to particular Unbound releases.</p>
+<p><a href="http://nlnetlabs.nl/">NLnet Labs'</a> <a href="http://unbound.net/">Unbound</a> recursive DNS server supports <code>dnstap</code> as of version 1.5.0, but it must be explicitly enabled at build time.</p>
 
-<p>Building Unbound with <code>dnstap</code> support requires that the <code>fstrm</code> and <code>protobuf-c</code> libraries be installed first. <code>dnstap</code> support for Unbound also introduces a build dependency on the <code>pkg-config</code> utility.</p>
+<p>Building Unbound with <code>dnstap</code> support requires that the <code>fstrm</code> and <code>protobuf-c</code> libraries be installed first.</p>
 
 <p>Two new <code>./configure</code> arguments have been added: <code>--enable-dnstap</code> to build with <code>dnstap</code> support, and <code>--with-dnstap-socket-path</code> to set the default <code>dnstap</code> socket path.</p>
 
-<pre><code>$ git clone https://github.com/dnstap/unbound.git
-$ cd unbound
-$ git checkout origin/branches/dnstap-1.4.21-release
+<pre><code>$ wget https://www.unbound.net/downloads/unbound-latest.tar.gz
+$ tar xf unbound-latest.tar.gz
+$ cd unbound-1.*
 $ ./configure --enable-dnstap &amp;&amp; make &amp;&amp; sudo make install
 </code></pre>
 

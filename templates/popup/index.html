@@ -75,8 +75,7 @@
             <h1>popup</h1>
           </header>
 
-            <p><TMPL_UNLESS mouseover>
-Use this template to create a popup window that is displayed when the mouse
+            <p>Use this template to create a popup window that is displayed when the mouse
 is over part of the page. This template has two parameters:</p>
 
 <ul>
@@ -89,11 +88,13 @@ large for good usability.
 
 
 <p>Note that browsers that do not support the CSS will display the popup
-inline in the page, inside square brackets.
-</TMPL_UNLESS>
+inline in the page, inside square brackets.</p>
+
+<p>[[templatebody &lt;<ENDBODY
 <span class="popup"><TMPL_VAR mouseover>
 <span class="paren">[</span><span class="balloon"><TMPL_VAR popup></span><span class="paren">]</span>
-</span></p>
+</span>
+ENDBODY]]</p>
 
       </div>
     </div>
