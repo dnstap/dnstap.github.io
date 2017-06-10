@@ -86,7 +86,7 @@ while allowing larger mp3 files to be uploaded by joey into a specific
 directory, and check all attachments for viruses, something like this could be
 used:</p>
 
-<pre><code>virusfree() and ((user(joey) and podcast/*.mp3 and mimetype(audio/mpeg) and maxsize(15mb)) or (mimetype(image/*) and maxsize(50kb)))
+<pre><code>virusfree() and ((user(joey) and podcast/*.mp3 and mimetype(audio/mpeg) and maxsize(15mb)) or ((mimetype(image/jpeg) or mimetype(image/png)) and maxsize(50kb)))
 </code></pre>
 
 <p>The regular <a href="../">PageSpec</a> syntax is expanded with the following
