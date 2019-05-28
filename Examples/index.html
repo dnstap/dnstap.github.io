@@ -77,7 +77,7 @@
 
             <h3>Knot DNS server</h3>
 
-<p>See the <a href="https://www.knot-dns.cz/docs/2.x/singlehtml/index.html#dnstap-dnstap-traffic-logging">Knot DNS documentation</a> for details on configuring <code>dnstap</code> support.</p>
+<p>See the <a href="https://www.knot-dns.cz/docs/latest/singlehtml/index.html#dnstap-dnstap-traffic-logging">Knot DNS documentation</a> for details on configuring <code>dnstap</code> support.</p>
 
 <h3>Unbound DNS server</h3>
 
@@ -97,6 +97,8 @@
 <p>You also need a capture tool listening on the other side of the socket.</p>
 
 <h3><em>dnstap</em> command-line tool</h3>
+
+<p>The <a href="https://github.com/dnstap/golang-dnstap/tree/master/dnstap">dnstap</a> command-line tool can read, write, and decode dnstap data from a running name server or a previously-saved file.</p>
 
 <p>The following command listens on the given <code>AF_UNIX</code> socket and decodes messages to <code>stdout</code>.</p>
 
