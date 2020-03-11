@@ -17,7 +17,75 @@
 
 <subtitle type="html">dnstap</subtitle>
 <generator uri="http://ikiwiki.info/">ikiwiki</generator>
-<updated>2019-05-28T16:47:09Z</updated>
+<updated>2020-03-11T11:30:32Z</updated>
+<entry>
+	<title>change to index on dnstap</title>
+
+	<id>http://dnstap.info/recentchanges/change_c29ae55ca2bc4ee4cb3b1962204965cb400d646f/</id>
+
+	<link href="http://dnstap.info/recentchanges/#change-c29ae55ca2bc4ee4cb3b1962204965cb400d646f"/>
+
+	<author><name>arsen.stasic</name></author>
+
+
+
+
+
+	<updated>2020-03-11T11:30:32Z</updated>
+	<published>2020-03-11T11:30:32Z</published>
+
+
+	<content type="html" xml:lang="en">
+	
+
+
+
+
+
+&lt;div id=&quot;change-c29ae55ca2bc4ee4cb3b1962204965cb400d646f&quot; class=&quot;metadata&quot;&gt;
+&lt;span class=&quot;desc&quot;&gt;&lt;br /&gt;Changed pages:&lt;/span&gt;
+&lt;span class=&quot;pagelinks&quot;&gt;
+
+
+
+
+index
+
+&lt;/span&gt;
+&lt;span class=&quot;desc&quot;&gt;&lt;br /&gt;Changed by:&lt;/span&gt;
+&lt;span class=&quot;committer&quot;&gt;
+
+arsen.stasic
+
+&lt;/span&gt;
+&lt;span class=&quot;desc&quot;&gt;&lt;br /&gt;Commit type:&lt;/span&gt;
+&lt;span class=&quot;committype&quot;&gt;git&lt;/span&gt;
+&lt;span class=&quot;desc&quot;&gt;&lt;br /&gt;Date:&lt;/span&gt;
+&lt;span class=&quot;changedate&quot;&gt;&lt;span class=&quot;date&quot;&gt;06:30:32 AM 03/11/2020&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;desc&quot;&gt;&lt;br /&gt;&lt;/span&gt;
+
+&lt;/div&gt;
+&lt;div class=&quot;changelog&quot;&gt;
+
+
+added more DNS servers which include dnstap&lt;br /&gt;
+
+
+
+
+
+NSD, dnsdist and PowerDNS recursor support dnstap too&lt;br /&gt;
+
+
+&lt;/div&gt;
+
+&lt;!-- c29ae55ca2bc4ee4cb3b1962204965cb400d646f --&gt;
+
+	</content>
+
+
+
+</entry>
 <entry>
 	<title>change to Examples on dnstap</title>
 
